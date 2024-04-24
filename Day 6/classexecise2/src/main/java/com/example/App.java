@@ -28,9 +28,9 @@ public class App
         driver.findElement(By.xpath("//*[@id='autosuggestlist']/ul/li[1]/a")).click();
         String str = driver.findElement(By.xpath("//*[@id='stockName']/h1")).getText();
         if(str.equals("Reliance Industries Ltd."))
-        System.out.print("Found");
+        System.out.print("Passed");
         else
-        System.out.print("Not Found");
+        System.out.print("Failed");
         driver.findElement(By.xpath("//*[@id='common_header']/div[1]/div[3]/nav/div/ul/li[10]/a")).click();
         driver.findElement(By.xpath("//*[@id='mc3_return']/div[1]/ul/li[2]/a")).click();
         
